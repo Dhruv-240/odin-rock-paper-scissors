@@ -19,7 +19,8 @@ draws=0;
 let h;
 let c;
 
-function playRound(h, c) {
+function playRound() {
+    for(let i=0; i<5; i++){
      h = getHumanChoice();
      c = getComputerChoice();
     if(h===c){
@@ -66,9 +67,9 @@ function playRound(h, c) {
         console.log(h,c,humanScore,computerScore)
     }
 }
-
-
-
-for(let i=0; i<5; i++){
-playRound(h, c);
 }
+
+
+
+
+playRound();
